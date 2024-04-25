@@ -1,38 +1,94 @@
-.App {
+body{
+  background-image: url('jj4.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; 
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 250px auto;
+  border-radius: 8px;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px; /* Increase padding for taller search input */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Increase border-radius for rounded corners */
+  font-size: 1.2rem; /* Increase font size of the search input text */
+}
+
+.search-button {
+  padding: 15px 25px; /* Increase padding for larger button */
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 8px; /* Increase border-radius for rounded corners */
+  cursor: pointer;
+  font-size: 1.2rem; /* Increase font size of the button text */
 }
 
-.App-link {
-  color: #61dafb;
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+  backdrop-filter: blur(5px); /* Adjust the blur value as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+.profile-details {
+  flex: 1;
+  
+}
+
+
+.profile-item {
+  margin-bottom: 30px; /* Increase margin-bottom for more spacing between profile cards */
+  background-color: #fff;
+  border-radius: 12px; /* Increase border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase box shadow for a subtle lift effect */
+}
+
+.profile-avatar {
+  width: 100px; /* Increase width of the avatar */
+  height: 100px; /* Increase height of the avatar */
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.profile-username {
+  margin: 0;
+  font-size: 2rem; /* Increase font size of the username */
+  color: #333;
+}
+
+.profile-bio {
+  margin: 0;
+  font-size: 1.2rem; /* Increase font size of the bio */
+  color: #666;
+}
+
+.title{
+  font-size: 90px;
+  color: #fff;
 }
